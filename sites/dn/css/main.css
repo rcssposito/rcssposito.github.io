@@ -16,7 +16,7 @@ body{
         'nav section3';
 }
 
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 1100px){
     #wrapper{
     display: grid;
     -webkit-grid-template-columns: 100%;
@@ -41,12 +41,18 @@ body{
     .row img{
         display: none;
     }
-    .info-header{
-        font-size: 16px;
+    .front1,.front2,
+    .front3,.front4,
+    .front5,.front6{
+        background-size: contain;
     }
-    .info-text{
-        font-size: 16px;}
+    .members{
+        display: grid;
+        width:82%;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px; 
     }
+}
 
 /* Menu */
 #ex-menu{
